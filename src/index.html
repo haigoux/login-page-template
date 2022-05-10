@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Login | DEMO</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+    
+        <div class="scalefit">
+            <div class="overlay" id="overlay">
+                
+            </div>
+            <div style="display: block" id="login-main">
+                <form action="" method="post">
+                    <div class="title-container">
+<!--                      <img style="vertical-align: middle" src="https://3.files.edl.io/20b7/21/09/10/201341-33a51652-0e0a-4998-a700-a650d9d02ba5.png" width="50px" height="50px"> -->
+                    <h1 class="title left">
+                        Login
+                    </h1>
+                    </div>
+
+                    <h1 class="subtitle left">
+                        Username
+                    </h1>
+                    <input id="username" type="text" placeholder="Username" id="username" name="username">
+                    <h1 class="subtitle left">
+                        Password
+                    </h1>
+                    <input type="password" placeholder="Password" id="password" name="password">
+                    <h2 class="error left">
+                        The username or password was incorrect. Please try again.
+                    </h2>
+                    <ul>
+                        <li>
+                            <div class="right"> <a href="?reset"> Reset Password </a>  <button type="button" id="loginbtn"> Login </button> 
+                            </div>
+                        </li>
+                    </ul>
+                    <br></br>
+                    <br></br>
+                </form>
+            </div>
+            <div style="display: none" id="success">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Linearicons_checkmark-circle.svg" width="64" height="64" class="center">
+                <h1 class="title middle">
+                    Login Success
+                </h1>
+                <h2 class="subtitle middle">
+                    Redirecting to content...
+                </h2>
+                <img class="center" src="spinner.svg" width='150' height='150'>
+                <br>
+                <br>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
