@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+
+form{
+    height: 100%;
+}
+
+div.scalefit{
+    width: 500px;
+    height: 80%;
+    max-height: 800px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+     /*Can also be `fixed`*/
+
+    user-select: none;
+    bottom: 0;
+    margin: auto;
+    margin-top: 5%;
+
+    position: relative;
+}
+    
+@media screen and (max-width: 800px){
+    div.scalefit{
+        width: 100%;
+        height: 100%;
+    max-height: 100%;
+        
+        border: none;
+        border-radius: 10px;
+        position: absolute; /*Can also be `fixed`*/
+        left: 0;
+        right: 0;
+        top: 0;
+        user-select: none;
+        bottom: 0;
+        margin: auto;
+    }
+
+}
+
+a{
+    user-select: none;
+    text-decoration: none;
+    color: #62bafe;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.title{
+    font-family: 'Varela Round', sans-serif;
+    
+}
+
+.subtitle{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+}
+
+.left{
+    text-align: left;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.right{
+    text-align: right;
+    margin-right: 12%;
+    margin-top: 10%;
+}
+
+.middle{
+    text-align: center;
+    margin-top: 2%;
+}
+
+.subtitle.left{
+    margin-top: 5%;
+}
+
+.overlay {
+  position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0, 0, 0, .01);
+    text-align:center;
+    border-radius: 9px;
+    backdrop-filter: blur(2px);
+    display: none;
+}
+
+input[type=text]{
+    height: 40px;
+    margin-left: 10%;
+    width: 75%;
+    margin-right: 10%;
+    border-radius: 9px;
+    border: 1px solid #e0e0e0;
+    background-color: rgb(250, 250, 250);
+    padding-left: 2%;
+}
+
+
+input[type=text]:focus{
+    height: 40px;
+    margin-left: 10%;
+    width: 75%;
+    margin-right: 10%;
+    border-radius: 9px;
+    outline: none;
+    border: 1px solid #c7c7c7;
+    padding-left: 2%;
+    -webkit-box-shadow: 0px 0px 5px 0px #d4d4d4; 
+box-shadow: 0px 0px 5px 0px #d4d4d4;
+    transition: all .1s;
+}
+
+input[type=text]:focus::placeholder{
+    transition: all .1s;
+    transform: scale(.1);
+    transform: translateY(-13px);
+}
+
+input{
+    transition: 0.3s all ease;
+}
+
+
+input[type=password]{
+    height: 40px;
+    margin-left: 10%;
+    width: 75%;
+    margin-right: 10%;
+    border-radius: 9px;
+    border: 1px solid #e0e0e0;
+    background-color: rgb(250, 250, 250);
+    padding-left: 2%;
+}
+
+
+input[type=password]:focus{
+    height: 40px;
+    margin-left: 10%;
+    width: 75%;
+    margin-right: 10%;
+    border-radius: 9px;
+    outline: none;
+    border: 1px solid #c7c7c7;
+    padding-left: 2%;
+    -webkit-box-shadow: 0px 0px 5px 0px #d4d4d4; 
+box-shadow: 0px 0px 5px 0px #d4d4d4;
+
+    transition: all .1s;
+}
+
+input[type=password]:focus::placeholder{
+    transition: all .1s;
+    margin-bottom: 4%;
+    transform: scale(.5);
+    transform: translateY(-12px);
+}
+
+button{
+    font-family: 'Varela Round', sans-serif;
+    
+    background-color: #335cff;
+    width: 90px;
+    height: 40px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    transition: .4s;
+}
+
+
+button:hover{
+    cursor: pointer;
+    background-color: #4d71fe;
+}
+
+button:active{
+    background-color: #0f3fff;
+    transform: scale(.98);
+}
+
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+
+}
+
+ul li{
+    margin: 0;
+    padding: 0;
+ 
+}
+.light{
+    color: #d6d6d6;
+}
+
+span.bottom {
+    
+}
+
+.white{
+    color: white;
+}
+
+
+h1{
+    vertical-align: middle;
+}
+
+.shadow{
+    text-shadow: 0px 0px 8px #000000;
+}
+
+.center{
+    margin: 0 auto;
+}
+
+
+img.center{
+    display: block;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+
+h2{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 14px;
+    color: black;
+    
+}
+
+h2.error{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: transparent;
+    
+}
+
+
+.title-container{
+    display: flex;
+    align-items:center;
+
+}
